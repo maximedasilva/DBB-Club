@@ -54,15 +54,14 @@ body{
 
 }
 .mainContent{
-
+  background-color:rgba(200,200,200,0.9);
+  border-radius:10px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-   width:100%;
-   margin:0px;
+   width:40%;
+   margin-left:10vw;
    }
 .content p{
-  color: rgb(255,255,255);
+  color: rgb(25,25,25);
 }
