@@ -9,6 +9,10 @@
   clip-path: polygon(0 0,100% 0, 100% 70%,0 100%);
 
 }
+.filter{
+    background-color: rgba(0, 0, 0, 0.6);
+    height:100vh;
+}
 .container h1{
   font-family: 'Raleway', sans-serif;
   font-weight:200;
@@ -22,7 +26,7 @@
 }
 .darker > h1:before{
   content: '';
-   border-bottom: 7px solid #ffe230;
+   border-bottom: 4px solid #702d28;
    width: 100%;
    position: absolute;
    Left: 5%;
@@ -38,8 +42,7 @@
 }
 .content{
   padding:20px;
- background-color: rgba(0, 0, 0, 0.8);
-  max-width: 50%;
+  max-width: 70%;
 }
 body{
   background-image: url("../img/cartons.jpg");
@@ -51,6 +54,7 @@ body{
 
 }
 .mainContent{
+
   display: flex;
   align-items: center;
   justify-content: center;
