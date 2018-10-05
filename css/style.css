@@ -26,7 +26,12 @@
 
 
 }
-.darker > h1:before{
+.Centering{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.darker > h1:before, .Centering > h2:before{
   content: '';
    border-bottom: 4px solid #702d28;
    width: 100%;
@@ -71,8 +76,11 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  width:90%;
-
+  width:100%;
+  padding-top:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
    }
 .content H2{
   color: rgb(0, 0, 0);
@@ -106,14 +114,21 @@ top:10%;
   position:relative;
   height:auto;
 }
-#imageWine > .imagekjg{
-  width:10%;
+.imageWines{
+  width:40%;
+  height:auto;
+  padding-Right:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageWines img{
+  width:100%;
 }
 .image img{
   width:100%;
 }
 .separator{
-  background-color:rgb(255,0,0);
   min-height:500px;
   margin-top:20px;
   clip-path: polygon(0 30%, 100% 0,100% 70%, 0 100%);
@@ -122,3 +137,10 @@ top:10%;
     background-position: 0 50%;
 
 }
+.Centering > h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight:200;
+  font-size:4em;
+color:rgb(230,230,230);
+text-align: center;
+position:relative;}
