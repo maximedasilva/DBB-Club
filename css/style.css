@@ -106,6 +106,9 @@ top:10%;
   position:relative;
   height:auto;
 }
+#imageWine > .imagekjg{
+  width:10%;
+}
 .image img{
   width:100%;
 }
@@ -115,6 +118,7 @@ top:10%;
   margin-top:20px;
   clip-path: polygon(0 30%, 100% 0,100% 70%, 0 100%);
   background-image: url("../img/background.jpg");
-    background-size: 100% 200%;
-    background-postion: ;
+    background-size: 100% auto;
+    background-position: 0 50%;
+
 }
