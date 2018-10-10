@@ -23,8 +23,6 @@
   margin:0px;
   color: rgb(230,230,230);
   position: relative;
-
-
 }
 .Centering{
   display: flex;
@@ -39,6 +37,7 @@
    Left: 5%;
    top: 100%;
 }
+
 .darker{
   background-color:rgba(0,0,0,0.5);
   width:100%;
@@ -46,10 +45,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.content{
-  padding:20px;
-  max-width: 70%;
 }
 body{
   background-image: url("../img/cartons.jpg");
@@ -69,7 +64,8 @@ body{
   align-items: center;
   justify-content: center;
   width:35%;
-
+  padding:20px;
+  max-width: 70%;
 }
 .mainContent{
   position:relative;
@@ -78,9 +74,6 @@ body{
   justify-content: center;
   width:100%;
   padding-top:70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
    }
 .content H2{
   color: rgb(0, 0, 0);
@@ -117,8 +110,8 @@ top:10%;
 .imageWines{
   width:40%;
   height:auto;
-  padding-Right:100px;
-
+  padding-Right:50px;
+  padding-Left:50px
 }
 .imageWines img{
   width:100%;
@@ -135,6 +128,27 @@ top:10%;
     background-position: 0 50%;
 
 }
+.imageWines>img:hover{
+transform: scale(1.1);
+}
+.imageWines>img
+{
+  transition: all .2s ease-in-out;
+}
+.Centering{
+  transition: all .2s ease-in-out;
+}
+.Centering:hover{
+  transform: translate(-10px,0%);
+}
+.Centering>h2:hover:before{
+  content: '';
+   border-bottom: 4px solid #702d28;
+   width: 100%;
+   position: absolute;
+   Left: 7%;
+   top: 103%;
+}
 .Centering > h2, .imageWines >h2{
   font-family: 'Raleway', sans-serif;
   font-weight:200;
@@ -147,4 +161,48 @@ position:relative;
 .imageWines >h2{
   color:rgb(189, 189, 189);
     font-size:2.3em;
+}
+
+.footer{
+  background-color:rgb(112, 45, 40);
+}
+.footer p, .footer a, .footer h3{
+  color:rgb(230,230,230);
+}
+
+@media screen and (max-width: 1200px) {
+.container h1{
+  font-size:60px;
+}
+.content h2{
+  font-size:25px;
+}
+.demarque{
+  font-size:50px;
+}
+}
+@media screen and (max-width: 800px) {
+  .mainContent{
+    width:100%!important;
+    padding-top:70px;
+    display: block;
+     }
+     .image{
+       width:80%;
+       height:auto;
+display:none;
+
+     }.content{
+        min-width:80%;
+        Left:10%;
+           padding:0px !important;
+
+     }
+.text{
+  margin:20px;
+}
+.imageWines{
+  min-width:80% !important;
+  padding-Left:10% !important;
+}
 }
