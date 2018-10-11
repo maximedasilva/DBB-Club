@@ -163,9 +163,7 @@ position:relative;
     font-size:2.3em;
 }
 
-.footer{
-  background-color:rgb(112, 45, 40);
-}
+
 .footer p, .footer a, .footer h3{
   color:rgb(230,230,230);
 }
@@ -181,6 +179,51 @@ position:relative;
   font-size:50px;
 }
 }
+
+.footer{
+  background-color:rgba(200,200,200,0.5);
+border-radius:3px;
+  margin-top:40px;
+  margin-bottom:40px;
+  display: grid;
+      grid-template-columns: repeat(3, [col] auto ) ;
+      grid-template-rows: repeat(1, [row] auto  );
+
+}
+.footercontent{
+
+  grid-column: 2;
+  grid-row:1;
+        display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, [col] auto ) ;
+    grid-template-rows: repeat(1, [row] auto  );
+}
+.footercontent #text{
+  padding-top:10px;
+  padding-bottom:10px;
+  grid-row:1;
+  grid-column:2;
+}
+
+#text{
+  font-family: 'Raleway', sans-serif;
+  text-align:center;
+  line-height: 0.8em;
+  grid-row:1;
+  grid-column:2;
+}
+#text a:hover{
+  color:rgb(112, 45, 40)
+}
+#text a
+{
+  transition: all .2s ease-in-out;
+}
+#little{
+  color:rgba(200,200,200,0.7);
+}
+
 @media screen and (max-width: 800px) {
   .mainContent{
     width:100%!important;
@@ -204,5 +247,8 @@ display:none;
 .imageWines{
   min-width:80% !important;
   padding-Left:10% !important;
+}
+.footer{
+display:block !important;
 }
 }
