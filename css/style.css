@@ -18,7 +18,7 @@
 .container h1{
   font-family: 'Raleway', sans-serif;
   font-weight:200;
-  font-size:5em;
+  font-size:5rem;
   padding:0px;
   margin:0px;
   color: rgb(230,230,230);
@@ -26,7 +26,7 @@
 }
 .Centering{
   display: flex;
-  align-items: center;
+  align-itrems: center;
   justify-content: center;
 }
 .darker > h1:before, .Centering > h2:before{
@@ -78,21 +78,21 @@ body{
 .content H2{
   color: rgb(0, 0, 0);
   font-family: 'Montserrat', sans-serif;
-  font-size:2em;
+  font-size:2rem;
   font-weight: 700;
 }
 .demarque{
   color: rgb(112, 45, 40);
   font-family: 'Montserrat', sans-serif;
-  font-size:2.3em;
+  font-size:2.3rem;
   font-weight: 200;
 
 }
 .content p{
   font-family: 'Montserrat', sans-serif;
-  font-size:1em;
+  font-size:1.5rem;
   font-weight: 400;
-  line-height: 2.1em;
+  line-height: 2.1rem;
   text-align:justify;
 }
 .red{
@@ -224,7 +224,7 @@ border-radius:3px;
   color:rgba(200,200,200,0.7);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .mainContent{
     width:100%!important;
     padding-top:70px;
@@ -233,7 +233,7 @@ border-radius:3px;
      .image{
        width:80%;
        height:auto;
-display:none;
+    display:none;
 
      }.content{
         min-width:80%;
@@ -243,6 +243,8 @@ display:none;
      }
 .text{
   margin:20px;
+  font-size:1.8rem;
+
 }
 .imageWines{
   min-width:80% !important;
@@ -250,5 +252,12 @@ display:none;
 }
 .footer{
 display:block !important;
+
+}
+.footercontent img{
+  width:100%;
+}
+.footercontent #text{
+  font-size: 1.8rem;
 }
 }
